@@ -1,0 +1,143 @@
+.upload-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4F1FF; /* Remplacement de l'image de fond par la couleur */
+    color: #444444;
+    min-height: 100vh;
+    padding-top: 15px;
+    position: relative;
+}
+
+.header h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.dropzone {
+    width: 400px;
+    height: 200px;
+    border: 2px dashed #CBD0DC;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.dropzone-icon {
+    width: 50px; /* Ajuste la taille de l'image */
+    height: 50px;
+}
+
+.dropzone:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border-color: #292D32;
+}
+
+.dropzone p {
+    color: #444;
+    font-size: 16px;
+}
+
+.upload-progress {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.upload-progress h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.upload-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.upload-item p {
+    margin: 0;
+    color: #333;
+}
+
+.upload-item progress {
+    width: 60%;
+    height: 10px;
+    margin-left: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.upload-item progress::-webkit-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.upload-item progress::-webkit-progress-value {
+    background-color: #CBD0DC;
+    border-radius: 5px;
+}
+
+.show-next-btn {
+    background-color: #002366;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: "Saira Condensed", sans-serif;
+    border-radius: 5px;
+}
+
+.show-next-btn:hover {
+    background-color: #002366;
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.upload-title {
+    font-size: 40px;
+    color: #002366;
+    display: flex;
+    align-items: center; /* Aligner l'image et le texte sur la même ligne */
+    justify-content: start; /* Aligner à gauche */
+    gap: 10px; /* Espacement entre l'image et le texte */
+    margin-bottom: 20px;
+}
+.upload-icon {
+    
+    width: 20px; /* Ajuste la taille de l'image */
+    height: 20px;
+}

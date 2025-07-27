@@ -1,0 +1,247 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Montserrat:wght@400;700&display=swap');
+
+/* Styles généraux */
+.homepage {
+    
+    font-family: 'Arial', sans-serif;
+    background-color: #E3F2FD;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+/* Section Hero */
+.hero-section {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+/* Rectangle blanc */
+.hero-container {
+    background: white;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Contenu du texte */
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* "ESiSource:" en Rammetto One */
+.hero-content h1 span {
+    font-family: 'Rammetto One', sans-serif;
+    color: black;
+}
+
+/* "Partager vos publications" en Montserrat */
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #002366;
+}
+
+/* Paragraphe */
+.hero-content p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Bouton "Poster" */
+.hero-button {
+    display: flex;
+    align-items: center;
+    background-color: #1565C0;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.hero-button span {
+    margin-left: 8px;
+}
+
+.hero-button:hover {
+    background-color: #0d47a1;
+}
+
+
+.hero-image img {
+    width: 400px;
+    max-width: 100%;
+}
+
+/* ======= Nouveau Rectangle (aligné avec Hero) ======= */
+.options-sectionx {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.options-containerx {
+    display: flex;
+    background: rgba(66, 165, 245, 0.4);
+    padding: 20px 40px;
+    border-radius: 16px;
+    max-width: 1000px; 
+    width: 100%;
+    justify-content: space-between; 
+}
+
+/* Style des options */
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/*.option:hover {
+    transform: scale(1.05);
+    color: #0d47a1;
+}*/
+
+/* Icônes */
+.option-icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.about-section {
+    background: #E4F1FF;
+    padding: 50px 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px; 
+    margin: auto;
+    flex-direction: row; 
+    gap: 10px; 
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+    padding: 20px; 
+    background: #FFFFFF;
+    border-radius: 8px;
+    max-width: 40%; 
+    min-height: 300px;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 90%;  
+    max-width: 350px;
+    border-radius: 10px;
+}
+/* ======= FOOTER ======= */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Contact */
+.footer-contact h3, .footer-social h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #002366;
+}
+
+.footer-contact p {
+    font-size: 20px;
+    color: black;
+}
+
+/* Réseaux sociaux */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    color: black;
+    
+}
+
+.social-icons svg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons svg:hover {
+    color: #1565C0;
+}
+.dot {
+    color: gray;
+    font-weight: normal;
+}
+

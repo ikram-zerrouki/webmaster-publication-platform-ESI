@@ -1,0 +1,79 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.historique-page {
+    padding: 90px;
+    padding-top: 80px;
+    /* Adjusted for fixed navbar */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E3F2FD;
+    min-height: 100vh;
+}
+
+.page-title {
+    font-size: 35px;
+    color: #002366;
+    margin: 20px 90px 20px;
+    /* Augmenté margin-top à 40px pour un espace avant le titre, corrigé la syntaxe */
+    text-align: left;
+    font-weight: bold;
+    /* Ajouté pour rendre le titre en gras */
+}
+
+.articles-label {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.article-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 2px solid #1565C0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.article-table th,
+.article-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.article-table th:last-child,
+.article-table td:last-child {
+    padding-left: 5px;
+    /* Reduced left padding for the Actions column */
+    padding-right: 15px;
+    /* Keep right padding as is */
+}
+
+.article-table th {
+
+    font-weight: bold;
+    color: #333;
+}
+
+.article-table tr:hover {
+    background-color: #E4F1FF;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background-color: #e04343;
+}

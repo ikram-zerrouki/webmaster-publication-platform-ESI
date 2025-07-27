@@ -1,0 +1,197 @@
+.ajout-article-container {
+  background: #e6f1fd;
+  padding: 40px 80px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.title {
+  color: #003366;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.article-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.editor {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  flex: 1;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.editor textarea {
+  width: 97%; /* Réduire la largeur du textarea */
+  height: 40px; /* Hauteur réduite */
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 14px; /* Réduire la taille de la police */
+  padding: 8px; /* Réduire l'espacement interne */
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.upload-icon {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.upload-icon img {
+  width: 38px;
+  height: 38px;
+  opacity: 0.8;
+  transition: transform 0.2s ease;
+}
+
+.upload-icon img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.right-panel {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.publication-type {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.publication-type label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #003366;
+}
+
+.calendar-nav {
+  background: white;
+  padding: 15px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55px;
+  padding: 10px 5px;
+  background: #f2f8ff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #003366;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.calendar-day.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.submit-button:hover {
+  background-color: #005dc0;
+}
+
+.publication-preview {
+  margin-top: 20px;
+  padding: 15px;
+  border-top: 1px solid #ccc;
+}
+
+.publication-preview img,
+.publication-preview video {
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  width: 500px; /* Augmenter la largeur des images et vidéos */
+  height: auto; /* Conserver le ratio de l'image/vidéo */
+}
+
+.media-preview {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.media-preview img,
+.media-preview video {
+  width: 100%;       /* Prend toute la largeur du conteneur */
+  max-height: 300px; /* Limite la hauteur */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.remove-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.media-item {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative; /* Nécessaire pour positionner la croix */
+}
+
+.close-icon {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  z-index: 1;
+}
